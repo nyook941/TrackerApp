@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:poop_tracker/screens/calendar_tracker.dart';
+import 'package:poop_tracker/screens/entry.dart';
 import 'package:poop_tracker/screens/loading.dart';
 
 void main() => runApp(MaterialApp(initialRoute: '/calendar', routes: {
       '/': (context) => const Loading(),
-      '/calendar': (context) => const CalendarTacker()
+      '/calendar': (context) => const CalendarTacker(),
+      '/entry': (context) => const EntryScreen()
     }));
 
 class AppHeader extends StatelessWidget implements PreferredSizeWidget {

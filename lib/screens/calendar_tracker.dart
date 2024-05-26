@@ -233,7 +233,11 @@ class _StampState extends State<Stamp> {
             height: 8,
           ),
           GestureDetector(
-            onTap: widget.pressable ? () {} : () {},
+            onTap: widget.pressable
+                ? () {
+                    Navigator.pushNamed(context, '/entry');
+                  }
+                : () {},
             onDoubleTap: widget.pressable
                 ? () {
                     setState(() {
